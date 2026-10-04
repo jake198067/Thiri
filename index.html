@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Thiri Yadanar 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #ffd1e3, #fff0f7);
+            font-family: Arial, sans-serif;
+            color: #70294b;
+            text-align: center;
+        }
+
+        .page {
+            max-width: 700px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .heart {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 48px;
+            color: #a52e62;
+            margin: 15px 0;
+        }
+
+        .intro {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        .letter {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(120, 40, 80, 0.15);
+            text-align: left;
+        }
+
+        .letter h2 {
+            text-align: center;
+            font-family: Georgia, serif;
+            color: #a52e62;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .letter p {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            text-align: right;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #a52e62;
+            margin-top: 30px;
+        }
+
+        .question {
+            margin-top: 80px;
+            padding-bottom: 60px;
+        }
+
+        .question h2 {
+            font-family: Georgia, serif;
+            color: #a52e62;
+            font-size: 36px;
+        }
+
+        .question p {
+            font-size: 18px;
+        }
+
+        button {
+            background: #df5c92;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 16px 35px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .no {
+            background: transparent;
+            color: #a45b79;
+            font-size: 12px;
+            padding: 5px;
+        }
+
+        #answer {
+            color: #a52e62;
+            font-family: Georgia, serif;
+            font-size: 22px;
+            margin-top: 30px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            .letter {
+                padding: 25px 20px;
+            }
+
+            .letter p {
+                font-size: 16px;
+            }
+
+            .question h2 {
+                font-size: 30px;
+            }
+
+            button {
+                padding: 14px 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="heart">💗</div>
+
+        <h1>Thiri Yadanar</h1>
+
+        <p class="intro">
+            I made something small for you... 💕
+        </p>
+
+        <div class="letter">
+
+            <h2>Dear Thiri, 💌</h2>
+
+            <p>
+                I missed my chance with you last time,
+                even though I really felt like we were
+                meant to be.
+            </p>
+
+            <p>
+                But now, I can't let this opportunity slide.
+            </p>
+
+            <p>
+                You are my everything. Whenever I'm
+                feeling down, you never fail to cheer me up.
+            </p>
+
+            <p>
+                Every day when I wake up, you're the
+                first person I think about.
+            </p>
+
+            <p>
+                I don't know exactly what you're going
+                to say, and I don't want you to feel pressured.
+            </p>
+
+            <p>
+                I just wanted to finally be honest
+                about how I feel.
+            </p>
+
+            <p>
+                And I would really appreciate it if
+                you could answer one question for me...
+            </p>
+
+            <div class="signature">
+                — Blair 💕
+            </div>
+
+        </div>
+
+        <div class="question">
+
+            <div class="heart">💗</div>
+
+            <h2>Would you give me a chance?</h2>
+
+            <p>Choose your answer...</p>
+
+            <button onclick="yes()">YES 💕</button>
+
+            <button onclick="yes()">YES 💗</button>
+
+            <br>
+
+            <button class="no" onclick="no()">no 💔</button>
+
+            <p id="answer"></p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function yes() {
+            document.getElementById("answer").innerHTML =
+                "YAYYYY 🥹💗<br><br>Thank you, Thiri.";
+        }
+
+        function no() {
+            document.getElementById("answer").innerHTML =
+                "It's okay. Thank you for reading this. 💗";
+        }
+    </script>
+
+</body>
+</html>
